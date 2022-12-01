@@ -22,7 +22,7 @@ header {
   position: sticky;
   width: 100vw;
   z-index: 2;
-  background-color: #faf1ec;
+  background-color: #ffffff;
   top: 0px;
 }
 header > div {
@@ -137,28 +137,10 @@ h2 {
 
 /* L'espace avec les caroussels */
 
-/* div {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-top: 0;
-  overflow: hidden;
-  overflow-x: scroll;
-} */
-/* 
- div {
-  display: flex;
-  background-color: yellow;
-  border: red 1px solid;
-  width: 100%;
-  height: 200px;
-  list-style: none;
-} */
-
 .LesSousCatégories {
   display: flex;
   width: 100%;
-  /* height: 200px; */
-  background-color: pink;
+  /*   background-color: pink; */
   gap: 16px;
   overflow: scroll;
 }
@@ -167,6 +149,24 @@ h2 {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
+  gap: 16px;
+}
+
+.LeCaroussel img {
+  height: 205px;
+  width: 270px;
+}
+
+.LeCaroussel h3 {
+  font-weight: bold;
+  color: black;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.LeCaroussel p {
+  color: #333333;
+  font-size: 14px;
 }
 
 /* ----------FOOTER--------- */
