@@ -6,7 +6,6 @@ body {
   /* border: 1px solid black; */
   width: 1135px;
   margin: 0 auto;
-  /*   height: 4000px; */
 }
 h1 {
   font-size: 54px;
@@ -14,16 +13,32 @@ h1 {
   font-family: TS-Med, sans-serif;
   margin: 20px 0;
 }
-/* -- HEADER ----------------------------------- */
+h2 {
+  font-size: 28px;
+  font-family: TS-Med, sans-serif;
+  font-weight: bold;
+}
+h3 {
+  font-size: 24px;
+  font-weight: TS-Med, sans-serif;
+  margin-bottom: 20px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 5px 0 10px 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* -------------------------------------- */
+/* -- HEADER ---------------------------- */
+/* -------------------------------------- */
 header {
   /* background-color: aqua; */
   height: 60px;
-  /* Faire en sorte que la barre du header soit fixe pendant la navigation  */
-  position: sticky;
-  width: 100vw;
-  z-index: 2;
-  background-color: #ffffff;
-  top: 0px;
 }
 header > div {
   height: 60px;
@@ -31,10 +46,11 @@ header > div {
   justify-content: space-between;
 }
 .logo {
-  /*     border: 1px solid red; */
-  height: 100%;
-  width: 50px;
+  /* border: 1px solid red; */
+  /* height: 100%;
+  width: 50px; */
   width: 190px;
+  height: 40px;
 }
 header nav {
   /* border: 1px solid red; */
@@ -59,9 +75,9 @@ header button:nth-child(4) {
 header button:not(:nth-child(4)):hover {
   background-color: rgb(220, 215, 215);
 }
-
-/* MAIN */
-
+/* -------------------------------------- */
+/* -- MAIN ------------------------------ */
+/* -------------------------------------- */
 .baseline {
   font-size: 14px;
   color: #333333;
@@ -69,15 +85,6 @@ header button:not(:nth-child(4)):hover {
 }
 h1 span {
   color: #ff5d5d;
-}
-
-h2 {
-  font-size: 28px;
-  font-weight: bold;
-  margin-top: 100px;
-}
-.Destinations {
-  text-decoration: none;
 }
 
 /* -- MENU ----------------------------------- */
@@ -88,10 +95,6 @@ h2 {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
-  /* Pour garder la barre de menu fixe pendant la navigation sur la page */
-  /* position: fixed;
-  width: 100vw;
-  z-index: 99; */
 }
 .menu div {
   border: 1px solid black;
@@ -101,9 +104,9 @@ h2 {
   border-radius: 5px;
   padding: 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-/* ---- IMAGES ----------------------------------- */
+/* -- IMAGES ----------------------------------- */
 .images {
   height: 425px;
   width: 100%;
@@ -111,11 +114,11 @@ h2 {
   display: flex;
   gap: 4px;
 }
-.images img {
+/* .images img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
+} */
 .images > div:first-child {
   background-color: #ff5d5d;
   height: 100%;
@@ -135,55 +138,145 @@ h2 {
   height: calc((100% - 4px) / 2);
 }
 
-/* L'espace avec les caroussels */
-
-.LesSousCatégories {
-  display: flex;
-  width: 100%;
-  /*   background-color: pink; */
-  gap: 16px;
-  overflow: scroll;
-}
-
-.LeCaroussel {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  gap: 16px;
-}
-
-.LeCaroussel img {
-  height: 205px;
-  width: 270px;
-}
-
-.LeCaroussel h3 {
-  font-weight: bold;
-  color: black;
-  font-size: 18px;
-  margin-top: 0;
-}
-
-.LeCaroussel p {
+/* -- BREADCRUM ------------------------------*/
+.breadcrum {
+  font-size: 12px;
   color: #333333;
-  font-size: 14px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
 }
 
-/* ----------FOOTER--------- */
-.containerFooter {
-  background-color: #faf1ec;
+/* -- DESCRIPTION ------------------------------ */
+.description {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 350px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.description > div:first-child {
+  /* background-color: green; */
+  height: 100%;
+  flex: 1;
+  padding-right: 60px;
+  box-sizing: border-box;
+}
+.description > div:last-child {
+  /* background-color: blue; */
+  height: 100%;
+  width: 480px;
+}
+.description p {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+}
+.textPart {
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 207px;
+  background-color: #ff5d5d;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px 10px 0 0;
+}
+.textPart h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.textPart p {
+  font-size: 12px;
+  color: #333333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.textPart button {
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+.mapPart {
+  /* border: 1px solid green; */
+  width: 100%;
+  height: calc(100% - 207px);
+}
+.mapPart img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
+}
 
+/* -- IMMANQUABLE ---------------------------- */
+.immanquable {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px;
+  display: flex;
+  gap: 10px;
+}
+.immanquable > div:first-child {
+  /* background-color: green; */
+  height: 100%;
+  width: 275px;
+}
+.carrousel {
+  /* background-color: blue; */
+  height: 100%;
+  flex: 1;
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+  overflow-x: scroll;
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.immanquable p {
+  font-size: 18px;
+  color: #333333;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+.immanquable a {
+  color: black;
+}
+/* -- carrousel ----------------------------- */
+.col {
+  /* border: 1px solid black; */
+  height: 100%;
+  width: calc((100% - 20px) / 3);
+  flex-shrink: 0;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.carrousel::-webkit-scrollbar {
+  display: none;
+}
+.col > div:first-child {
+  height: 200px;
+  width: 100%;
+  background-color: coral;
+  position: relative;
+}
+.col p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.rate {
+  font-size: 12px;
+}
+.favorite {
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.containerFooter p {
-  font-weight: bold;
-  margin: 40px;
-}
-
-.containerFooter img {
-  height: 45px;
-  width: 45px;
 }
