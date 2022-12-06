@@ -280,3 +280,25 @@ h1 span {
   justify-content: center;
   align-items: center;
 }
+
+/* FOOTER*/
+
+footer {
+  height: 210px;
+  width: 100%;
+  background-color: #fcf6f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+}
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .container {
+    width: 1000px;
+  }
+}
