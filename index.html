@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Import style -->
-    <!-- <link rel="stylesheet" href="./assets/css/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/font.css" />
     <!-- Import Font Awesome -->
@@ -18,8 +18,9 @@
   <body>
     <header>
       <div class="container">
-        <i class="fa-solid fa-magnifying-glass hiddenXL"></i>
+        <i class="fa-solid fa-bars hiddenXL"></i>
         <img src="./assets/img/logo.svg" alt="Logo Trip Advisor" class="logo" />
+
         <div class="thirdPart">
           <i class="fa-solid fa-magnifying-glass hiddenXL"></i>
           <nav>
@@ -31,29 +32,31 @@
               <i class="fa-solid fa-pen"></i> <span>Alertes</span>
             </button>
             <button>Connectez-vous</button>
-            <button><i class="fa-solid fa-pen"></i> Panier</button>
+            <button><i class="fa-solid fa-pen"></i> <span>Panier</span></button>
           </nav>
         </div>
       </div>
     </header>
 
     <!-- -- MAIN ----------------------------------- -->
-    <main class="container">
-      <h1><span>Explorez</span> Paris</h1>
-      <p class="baseline">
+    <main>
+      <h1 class="container"><span>Explorez</span> Paris</h1>
+      <p class="container baseline">
         Les revenus influencent le choix des expériences présentées sur cette
         page : en savoir plus.
       </p>
 
       <!-- ---- MENU---------------------------------- -->
-      <nav class="menu">
+      <nav class="container menu">
         <div>Hôtel <i class="fa-solid fa-pen"></i></div>
         <div>Location de voyages <i class="fa-solid fa-pen"></i></div>
         <div>Activités <i class="fa-solid fa-pen"></i></div>
         <div>Restaurants <i class="fa-solid fa-pen"></i></div>
         <div>Forum de voyages <i class="fa-solid fa-pen"></i></div>
-        <div class="addedMenu">Vols <i class="fa-solid fa-pen"></i></div>
-        <div class="addedMenu">Croisières <i class="fa-solid fa-pen"></i></div>
+
+        <div class="addedMenu">Vols<i class="fa-solid fa-pen"></i></div>
+        <div class="addedMenu">Croisière<i class="fa-solid fa-pen"></i></div>
+
         <div>Plus <i class="fa-solid fa-pen"></i></div>
       </nav>
 
@@ -68,12 +71,12 @@
         </div>
       </section>
 
-      <section class="breadcrum">
+      <section class="container breadcrum">
         <div>Europe > France > Île-de-France > Paris</div>
         <div>Visiter: paris</div>
       </section>
 
-      <section class="description">
+      <section class="container description">
         <div>
           <h2>La Ville Lumière éblouit en tous points</h2>
           <p>
@@ -101,9 +104,9 @@
         </div>
       </section>
 
-      <h2>Les Immanquables</h2>
+      <h2 class="container">Les Immanquables</h2>
 
-      <section class="immanquable">
+      <section class="container immanquable">
         <div>
           <h3>Se divertir</h3>
           <p>
@@ -212,20 +215,5 @@
         </div>
       </section>
     </main>
-
-    <footer>
-      <div>
-        <p>
-          Made at <a href="https://www.lereacteur.io/"> Le Reacteur</a> by
-          <a href="https://github.com/dewismecindy?tab=repositories">
-            DEWISME Cindy </a
-          >- 2022
-        </p>
-        <img
-          src="./assets/img/Tripadvisor_logoset_solid_green.svg"
-          alt="Logo finale Tripadvisor"
-        />
-      </div>
-    </footer>
   </body>
 </html>
