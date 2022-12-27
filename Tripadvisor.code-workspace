@@ -1,0 +1,23 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "../../Downloads/Tripadvisor-main/assets"
+	},
+	{
+		"path": "../../Downloads/Tripadvisor-main/assets/css"
+	},
+	{
+		"path": "../../Downloads/Tripadvisor-main/assets/fonts"
+	},
+	{
+		"path": "../../Downloads/Tripadvisor-main/assets/img"
+	},
+	{
+		"path": "../../Downloads/Tripadvisor-main/assets/js"
+	}
+],
+  "settings": {}
+}
